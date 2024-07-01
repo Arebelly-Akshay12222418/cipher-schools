@@ -1,1 +1,73 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
 
+/* Element Selector */
+p{
+    text-align: center;
+}
+
+
+/* Id Selector */
+#myId{
+    color: red;
+}
+
+/* Class Selector */
+.myClass{
+    font-size: 3cap;
+}
+
+
+/* Group Selector */
+#myId, #myId1{
+    background-color: antiquewhite;
+}
+
+
+
+/* 2. Combinator Selector
+1. descendant selector (space)
+2. child selector (>)
+3. adjacent sibling selector (+)
+4. general sibling selector (~)
+ */
+
+ div p{  /*descendant selector*/
+    color: yellow;
+ }
+
+ div>p{  /* child selector */
+    background-color: rgb(1, 24, 24);
+ }
+
+ div + p{   /* adjacent sibling selector */
+    background-color: red;
+ }
+
+
+ p ~ div{
+    background-color: aqua;
+ }
+
+
+ /* Pseduo selector  */
+
+ p ~ div:hover{
+    font-size: larger;
+ }
+
+div p::first-line{
+    color: red;
+}
+div p::first-letter{
+    color: yellow;
+}
+
+
+/* Attribute Selector */
+
+a[target]{
+    color: orange;
+}
